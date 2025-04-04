@@ -1,0 +1,129 @@
+/* src/index.css */
+
+/* Reset some basic margins/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header, .content-section {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Subheader / Tagline / Additional info */
+header p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #666;
+  text-align: center;
+}
+
+/* Weather App Title */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.form-group button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.form-group button:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Location button */
+.location-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #28a745;
+  background: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.location-button:hover {
+  background: #218838;
+  border-color: #1e7e34;
+}
+
+/* Weather display */
+.weather-display {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.weather-display img {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Forecast list */
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-item {
+  width: 130px;
+  text-align: center;
+  background: #f8f9fa;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ececec;
+}
+
+.forecast-item p {
+  margin: 0.25rem 0;
+}
+
