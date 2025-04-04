@@ -94,7 +94,7 @@ function ForecastChart({ forecastsData }) {
 
   return (
     <div style={{ marginBottom: '2rem' }}>
-      <h2>5-Day Forecast (Temperature Trend)</h2>
+      <h2>5-Day Forecast (Temperature Trend)</h2>     
       <Line data={data} options={options} />
     </div>
   );
