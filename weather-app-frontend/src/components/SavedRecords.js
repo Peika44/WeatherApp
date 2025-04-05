@@ -28,9 +28,21 @@ function SavedRecords({ records, refreshRecords }) {
     }
   };
 
+  const handleExport = (format) => {
+    const base = BACKEND_URL.replace(/\/weather$/, ''); // remove trailing /weather if present
+    const exportUrl = `${base}/weather/export?format=${format}`;
+    window.open(exportUrl, '_blank');
+  };
+
   return (
     <div>
       <h2>Saved Weather Records</h2>
+
+      <div style={{ marginBottom: '10px' }}>
+        <button onClick={() => handleExport('csv')}>Export CSV</button>
+        <button onClick={() => handleExport('json')}>Export JSON</button>
+      </div>
+
       <ul>
         {records.map(record => (
           <li key={record._id}>
