@@ -78,12 +78,12 @@ function WeatherDetails({ weatherData }) {
           </tr>
           <tr>
             <th style={thStyle}>Temperature</th>
-            <td style={tdStyle}>{temp !== undefined ? `${temp} K` : '--'}</td>
+            <td style={tdStyle}>{temp !== undefined ? `${temp} °C` : '--'}</td>
           </tr>
           <tr>
             <th style={thStyle}>Feels Like</th>
             <td style={tdStyle}>
-              {feelsLike !== undefined ? `${feelsLike} K` : '--'}
+              {feelsLike !== undefined ? `${feelsLike} °C` : '--'}
             </td>
           </tr>
           <tr>
